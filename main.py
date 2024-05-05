@@ -2,22 +2,10 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 1,
-   "id": "3829f55a-2925-4963-957c-f91f0d24c4a8",
+   "execution_count": "null",
+   "id": "cd11268e-3f34-41a9-9893-a02fc46b5215",
    "metadata": {},
-   "outputs": [
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "2024-05-05 18:31:12.675 \n",
-      "  \u001b[33m\u001b[1mWarning:\u001b[0m to view this Streamlit app on a browser, run it with the following\n",
-      "  command:\n",
-      "\n",
-      "    streamlit run C:\\Users\\ANKITHA_REDDY\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\ipykernel_launcher.py [ARGUMENTS]\n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "import streamlit as st\n",
     "import os\n",
@@ -36,7 +24,6 @@
     "\n",
     "model = ResNet50(weights='imagenet',include_top=False,input_shape=(224,224,3))\n",
     "model.trainable = False\n",
-    "\n",
     "\n",
     "model = tensorflow.keras.Sequential([\n",
     "    model,\n",
@@ -104,7 +91,7 @@
   {
    "cell_type": "code",
    "execution_count": "null",
-   "id": "cd11268e-3f34-41a9-9893-a02fc46b5215",
+   "id": "b001cf1a-a76d-46fc-b60c-77d7422ca89e",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -132,3 +119,4 @@
  "nbformat": 4,
  "nbformat_minor": 5
 }
+
